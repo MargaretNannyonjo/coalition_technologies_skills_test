@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/2b3b1007d8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <title>Patients data</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- HEADER | NAVBAR-->
+    <div class="container">
+      <nav class="header">
+        <img class="logo" src="images/TestLogo.png" alt="logo" />
+
+        <div class="header-links">
+          <li class="links">
+            <img src="images/home.png" alt="home" />
+            <p>Overview</p>
+          </li>
+
+          <li class="links">
+            <img src="images/group.png" alt="patients" />
+            <p>Patients</p>
+          </li>
+
+          <li class="links">
+            <img src="images/calendar.png" alt="schedule" />
+            <p>Schedule</p>
+          </li>
+
+          <li class="links">
+            <img src="images/chat.png" alt="message" />
+            <p>Message</p>
+          </li>
+
+          <li class="links">
+            <img src="images/credit-card.png" alt="transactions" />
+            <p>Transactions</p>
+          </li>
+        </div>
+
+        <div class="doctor-profile-header">
+          <div class="doc-profile">
+            <img
+              src="images/senior-woman-doctor.png"
+              alt="senior-woman-doctor"
+            />
+
+            <div class="name">
+              <p style="font-weight: bold">Dr.Jose Simmons</p>
+              <p style="color: #b5b5b5">General Practioner</p>
+            </div>
+          </div>
+          <div class="flex-header">
+            <img class="settings" src="images/settings.png" alt="" />
+            <img class="more" src="images/more.png" alt="more" />
+          </div>
+        </div>
+      </nav>
+
+      <!-- SIDEBAR | PATIENTS BAR  -->
+
+      <div class="patients-data">
+        <div class="patients">
+          <div class="patients-heading">
+            <h3>Patients</h3>
+            <img src="images/search.png" alt="search" />
+          </div>
+
+          <div class="profiles">
+            <div class="link"></div>
+          </div>
+        </div>
+
+        <!-- DIAGNOSTIC HISTORY -->
+
+        <div>
+          <div class="diagnosis-history">
+            <h2>Diagnosis history</h2>
+            <div class="graph-details">
+              <div class="graph-content">
+                <div class="graph-heading">
+                  <h3 style="font-size: 1rem">Blood Pressure</h3>
+
+                  <div>
+                    <p style="font-size: 0.8rem">
+                      Last 6 months
+                      <img
+                        style="width: 11px; height: 6px; margin-left: 5px"
+                        src="images/expand_more.png"
+                        alt="expand"
+                      />
+                    </p>
+                  </div>
+                </div>
+
+                <canvas
+                  style="width: 417px; height: 187px"
+                  id="myChart"
+                ></canvas>
+              </div>
+
+              <div class="blood-pressure-details"></div>
+            </div>
+
+            <div class="vitals-div"></div>
+          </div>
+
+          <div class="diagnostic-List">
+            <h3 style="font-size: 1.4rem">Diagnostic List</h3>
+
+            <div class="problem-description">
+              <div>
+                <h6>Problem/Diagnosis</h6>
+              </div>
+
+              <div>
+                <h6>Description</h6>
+              </div>
+
+              <div>
+                <h6>Status</h6>
+              </div>
+            </div>
+            <div class="problem-info"></div>
+          </div>
+        </div>
+
+        <!-- PATIENT HISTORY -->
+        <div class="right-div">
+          <div class="patient-profile"></div>
+
+          <div class="lab-results">
+            <h4>Lab results</h4>
+
+            <div class="results"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
